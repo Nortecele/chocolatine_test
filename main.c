@@ -17,6 +17,7 @@ static char *get_expr(unsigned int size)
 {
     char *expr;
 
+    // TAMERE
     if (size <= 0) {
         my_putstr(SYNTAX_ERROR_MSG);
         exit(EXIT_SIZE_NEG);
