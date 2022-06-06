@@ -1,0 +1,8 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/julian/works/school/DevOps/Chocolatine_test'
+rm -f *~ '#'*
+rm -f connect4
+make -C lib/
+gcc src/main.c src/flag_gestion.c src/map_gestion.c src/game.c src/utils.c src/check_win.c src/checks.c -Llib/ -lmy -I include/ -o connect4 -Wall -Wextra -g
+make: Leaving directory '/home/julian/works/school/DevOps/Chocolatine_test'
+ 
